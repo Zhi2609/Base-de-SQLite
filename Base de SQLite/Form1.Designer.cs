@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.Nombrelabel = new System.Windows.Forms.Label();
             this.IDlabel = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@
             this.insertarbutton = new System.Windows.Forms.Button();
             this.actualizarbutton = new System.Windows.Forms.Button();
             this.eliminarbutton = new System.Windows.Forms.Button();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +51,11 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(376, 355);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
             // 
             // label1
             // 
@@ -128,11 +133,6 @@
             this.eliminarbutton.Text = "Eliminar";
             this.eliminarbutton.UseVisualStyleBackColor = true;
             // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +149,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
