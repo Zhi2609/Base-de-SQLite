@@ -112,6 +112,7 @@
             this.insertarbutton.TabIndex = 6;
             this.insertarbutton.Text = "Insertar";
             this.insertarbutton.UseVisualStyleBackColor = true;
+            this.insertarbutton.Click += new System.EventHandler(this.insertarbutton_Click);
             // 
             // actualizarbutton
             // 
@@ -132,6 +133,7 @@
             this.eliminarbutton.TabIndex = 8;
             this.eliminarbutton.Text = "Eliminar";
             this.eliminarbutton.UseVisualStyleBackColor = true;
+            this.eliminarbutton.Click += new System.EventHandler(this.eliminarbutton_Click);
             // 
             // Form1
             // 
